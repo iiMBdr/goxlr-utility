@@ -1,0 +1,96 @@
+:root {
+  /* Color Palette */
+  --bg-app: #171C1F;
+  --bg-sidebar: #1B2023;
+  --surface-primary: #202629;
+  --surface-secondary: #252B2E;
+  --surface-raised: #2A3033;
+  --surface-hover: #303639;
+
+  --border: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.10);
+
+  --text-primary: #F1F3F3;
+  --text-secondary: #AEB5B7;
+  --text-muted: #737C80;
+
+  --accent: #52D6CC;
+  --accent-hover: #65E0D7;
+  --accent-muted: rgba(82, 214, 204, 0.15);
+
+  --success: #62D7A5;
+  --warning: #E4B967;
+  --danger: #E26D72;
+
+  /* Typography */
+  --font-family: Inter, "Segoe UI Variable", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  --font-size-page-title: 32px;
+  --font-size-section-title: 14px;
+  --font-size-body: 13px;
+  --font-size-secondary: 12px;
+  --font-size-small: 11px;
+
+  /* Spacing Scale */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+
+  /* Radii */
+  --radius-card: 12px;
+  --radius-control: 8px;
+  --radius-button: 6px;
+  --radius-pill: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 200ms ease;
+}
+
+/* Global Reset & Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
